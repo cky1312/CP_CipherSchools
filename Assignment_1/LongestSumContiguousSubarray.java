@@ -20,7 +20,7 @@ public class LongestSumContiguousSubarray {
         System.out.print("Max sum using 2 loops: ");
         System.out.println(sss);
 
-        int ssss = kadanes(arr,n);
+        int ssss = kadane(arr,n);
         System.out.print("Max sum using Kadane's Algorithm: ");
         System.out.println(ssss);
 
@@ -54,7 +54,7 @@ public class LongestSumContiguousSubarray {
         return maxSum;
     }
 
-    static int kadanes(int[] arr, int n){
+    static int kadane(int[] arr, int n){
         int maxSum = arr[0];
         int tempSum = arr[0];
 
