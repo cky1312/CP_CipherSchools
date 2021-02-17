@@ -24,6 +24,8 @@ public class LongestSumContiguousSubarray {
         System.out.print("Max sum using Kadane's Algorithm: ");
         System.out.println(ssss);
 
+        sc.close();
+
     }
 
     static int maxSumOfSubarray(int[] arr, int n){
