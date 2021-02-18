@@ -1,6 +1,4 @@
 package Assignment_3;
-
-import java.util.*;
 public class ReverseLinkedList {
 
     static Node head;
