@@ -3,20 +3,20 @@ package Assignment_3;
 
 public class deleteANode {
 
-    static Node head;
+    static N head;
 
-    static class Node {
+    static class N {
         int data;
-        Node next;
+        N next;
 
-        Node(int d) {
+        N(int d) {
             data = d;
             next = null;
         }
     }
 
     void deleteNode(int key) {
-        Node temp = head, prev = null;
+        N temp = head, prev = null;
 
         if (temp != null && temp.data == key) {
             head = temp.next;
@@ -35,7 +35,7 @@ public class deleteANode {
     }
 
     public void printList() {
-        Node tnode = head;
+        N tnode = head;
         while (tnode != null) {
             System.out.print(tnode.data + " ");
             tnode = tnode.next;
@@ -46,12 +46,12 @@ public class deleteANode {
 
         deleteANode dn = new deleteANode();
 
-        dn.head = new Node(5);
-        dn.head.next = new Node(3);
-        dn.head.next.next = new Node(8);
-        dn.head.next.next.next = new Node(6);
-        dn.head.next.next.next.next = new Node(1);
-        dn.head.next.next.next.next.next = new Node(9);
+        dn.head = new N(5);
+        dn.head.next = new N(3);
+        dn.head.next.next = new N(8);
+        dn.head.next.next.next = new N(6);
+        dn.head.next.next.next.next = new N(1);
+        dn.head.next.next.next.next.next = new N(9);
 
         System.out.println("Created Linked List is:");
 
